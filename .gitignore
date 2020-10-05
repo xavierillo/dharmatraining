@@ -1,23 +1,46 @@
+# Ignore docs files
+/_gh_pages/
+/site/.jekyll-cache
+/site/.jekyll-metadata
+/site/docs/**/dist/
+# Hugo folders
+/resources/
+
+# Ignore ruby/bundler files
+/.bundle/
 /vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+/.ruby-version
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+*.zip
+*~
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
+# OS or Editor folders
+._*
+.cache
+.DS_Store
+.idea
+.project
+.settings
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+nbproject
+Thumbs.db
 
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
+# Komodo
+.komodotools
+*.komodoproject
 
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
+# Folders to ignore
+/js/coverage/
+/node_modules/
