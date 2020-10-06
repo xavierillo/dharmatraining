@@ -2,7 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/main.js', 
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
@@ -106,5 +106,3 @@ if (process.env.NODE_ENV === 'production') {
     })
   ])
 }
-
- 
