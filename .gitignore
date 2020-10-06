@@ -2,9 +2,9 @@
 /_gh_pages/
 /site/.jekyll-cache
 /site/.jekyll-metadata
-/site/docs/**/dist/
+#/site/docs/**/dist/
 # Hugo folders
-/resources/
+#/resources/
 
 # Ignore ruby/bundler files
 /.bundle/
