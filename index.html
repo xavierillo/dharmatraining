@@ -7,8 +7,8 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <title>Dharma training</title>
         <!-- Required Stylesheets -->
-        <link rel="icon" href="./assets/images/dharma_16_16.ico" sizes="16x16" type="image/ico">
-        <link rel="icon" href="./assets/images/dharma_32_32.ico" sizes="32x32" type="image/ico">
+        <link rel="icon" href="./assets/images/dharma.ico" sizes="16x16" type="image/ico">
+        <link rel="icon" href="./assets/images/dharma.ico" sizes="32x32" type="image/ico">
         <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
         <link type="text/css" rel="stylesheet" href="./assets/css/bootstrap-vue.css"/>
         <link rel="stylesheet" href="./assets/css/fontawesome/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -17,21 +17,75 @@
         <link type="text/css" rel="stylesheet" href="./assets/css/fonts.css"/>
         <link type="text/css" rel="stylesheet" href="./assets/css/custom.css"/>
         <script src="./assets/js/vue.js"></script>
-        <script src="./assets/js/bootstrap-vue.js"></script>      
+        <script src="./assets/js/bootstrap-vue.js"></script>
 
 
 
     </head>
   <body style="background: #cccccc;">
-    <!-- Our application root element -->
     <div id="app">
         <header class="fixed-top page-header">
+            <div class="container-fluid navbar navbar-dark bg-dark navbar-expand-md">
+                <div class="row  w-100">
+                    <div class="col-12 d-md-none d-sm-block text-white menu_font_built_bold letter-spacing-1 text-center" style="font-size: 12px;">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-whatsapp pl-2"></i>
+                        <i class="fab fa-instagram pl-2"></i>
+                        <i class="fas fa-map-marker-alt pl-2"></i> Los nísperos 43, La Serena
+                    </div>
+                    <div class="col-2 text-center">
+                        <img class="navbar-brand" src="./assets/images/dharma_100px.png">
+                    </div>
+                    <div class="col-8 mt-3">
+                        <div class="collapse navbar-collapse justify-content-lg-center">
+                            <ul class="navbar-nav menu_font_built_bold letter-spacing-2">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#process">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <b-nav-item-dropdown text="Programa" right>
+                                        <b-dropdown-item href="#">Crossfit</b-dropdown-item>
+                                        <b-dropdown-item href="#">Open box</b-dropdown-item>
+                                    </b-nav-item-dropdown>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#popular-destinations">Horarios</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#request-quote">Clases de prueba</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#request-quote">Contacto y como llegar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-2 ml-auto ml-0">
+                        <div class="collapse navbar-collapse row text-white text-white menu_font_built_bold letter-spacing-1 text-center mt-2">
+                            <div class="col-12" style="font-size: 16px;">
+                                <i class="fas fa-map-marker-alt  pr-2"></i> <span style="font-size: 14px;">Los nísperos 43, La Serena</span>
+                            </div>
+                            <div class="col-12">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-whatsapp pl-2"></i>
+                                <i class="fab fa-instagram pl-2"></i>
+                            </div>
+                        </div>
+                        <div class="text-right h-100 d-flex" style="justify-content: center;  align-items: center;">
+                            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+ <!--
             <div class="container-fluid container-fluid-max pl-0 pr-0">
               <nav id="navbar" class="navbar navbar-dark bg-dark navbar-expand-lg">
                     <div class="row w-100">
                         <div class="col">
                             <img class="navbar-brand" src="./assets/images/dharma_100px.png">
-
                         </div>
                         <div class="collapse navbar-collapse justify-content-lg-between col-8">
                             <ul class="navbar-nav menu_font_built_bold letter-spacing-2">
@@ -55,8 +109,22 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-2 text-white menu_font_built_bold letter-spacing-1 text-center">
-                            <div class="row">
+      
+                        <div class="col-6 col-sm-8 col-md-9 col-lg-9 col-xl-9 d-lg-none d-sm-block d-print-block  text-white menu_font_built_bold letter-spacing-1 text-center">
+                            <div class="row h-100 pt-2">
+                                <div class="col-12" style="font-size: 16px;">
+                                    <i class="fas fa-map-marker-alt  pr-2"></i> Los nísperos 43, La Serena 23333
+                                </div>
+                                <div class="col-12">
+                                    <i class="fab fa-facebook pr-2"></i>
+                                    <i class="fab fa-whatsapp pr-2"></i>
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </div>
+                        </div>                        
+
+                        <div class="col d-sm-none d-lg-block d-print-block text-white menu_font_built_bold letter-spacing-1 text-center pt-3">
+                            <div class="row h-100 pt-2 collapse navbar-collapse justify-content-lg-between">
                                 <div class="col-12" style="font-size: 16px;">
                                     <i class="fas fa-map-marker-alt  pr-2"></i> Los nísperos 43, La Serena
                                 </div>
@@ -66,11 +134,13 @@
                                     <i class="fab fa-instagram"></i>
                                 </div>
                             </div>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
                         </div>
-                    </div>
+
+ 
+                        <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                     </div> -->
                  
 
 
@@ -111,9 +181,9 @@
                           <div class="d-none d-xl-inline">info@honeydreams.com</div>
                         </a>
                     </div>
-                </div> -->
+                </div> 
               </nav>
-            </div>
+            </div>-->
         </header>
 
        <!--  <main>
