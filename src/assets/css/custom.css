@@ -1,13 +1,13 @@
-body { 
-  font-family: SourceSansPro, sans-serif; 
-  font-style: normal;
-  font-weight: 300;
+body {
+	font-family: SourceSansPro, sans-serif; 
+	font-style: normal;
+	font-weight: 300;
 }
 
 .font_third_rail { 
-  font-family: ThirdRail, sans-serif; 
-  font-style: normal;
-  font-weight: 300;
+	font-family: ThirdRail, sans-serif; 
+	font-style: normal;
+	font-weight: 300;
 }
 
 .text-pink {
@@ -15,56 +15,66 @@ body {
 }
 
 .menu_font_built_bold { 
-  font-family: BuiltTitling, sans-serif; 
-  font-weight: bold;
-  font-style: normal;
+	font-family: BuiltTitling, sans-serif; 
+	font-weight: bold;
+	font-style: normal;
 }
 
-
 .letter-spacing-0 {
-    letter-spacing: 0.1rem;
+	letter-spacing: 0.1rem;
 }
 
 .letter-spacing-1 {
-  letter-spacing: 0.4rem;
+	letter-spacing: 0.4rem;
 }
 
 .letter-spacing-2 {
-  letter-spacing: 0.6rem;
+	letter-spacing: 0.6rem;
 }
 
 .letter-spacing-3 {
-  letter-spacing: 1px;
+	letter-spacing: 1px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgb(255 255 255);
+	color: rgb(255 255 255);
 }
 
-
 .btn-pink {
-    color: #fff;
-    background-color: #E80E8C;
-    border-color: #E80E8C;
+	color: #fff;
+	background-color: #E80E8C;
+	border-color: #E80E8C;
 }
 
 .btn-pink:not(:disabled):not(.disabled):active, .btn-pink:not(:disabled):not(.disabled).active, .show > .btn-pink.dropdown-toggle {
-    color: #fff;
-    background-color: #9e1b67;
-    border-color: #9e1b67;
+	color: #fff;
+	background-color: #9e1b67;
+	border-color: #9e1b67;
 }
 
 .btn-pink:not(:disabled):not(.disabled):active:focus, .btn-pink:not(:disabled):not(.disabled).active:focus, .show > .btn-pink.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+	box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
 .btn-pink:focus{
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgb(232 14 140);
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgb(232 14 140);
 }
 
 .c-app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	min-height: 80vh;
+}
+
+.bg-pink {
+	background: #E80E8C;
+}
+
+.row {
+    width: 100%
+}
+
+.c-pointer {
+	cursor: pointer;
 }
