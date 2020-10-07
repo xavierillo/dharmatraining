@@ -309,22 +309,22 @@
 				<div class="container-sm">
 					<div class="row">
 						<div class="col-6 col-md-4 text-center">
-							<img src="./assets/images/dharma_300px.png" class="c-pointer w-100">
+							<img src="./assets/images/insta/IMG_1.jpg" class="c-pointer w-100">
 						</div>
 						<div class="col-6 col-md-4 text-center">
-							<img src="./assets/images/dharma_300px.png" class="c-pointer w-100">
+							<img src="./assets/images/insta/IMG_2.jpg" class="c-pointer w-100">
 						</div>
 						<div class="col-6 col-md-4 text-center">
-							<img src="./assets/images/dharma_300px.png" class="c-pointer w-100">
+							<img src="./assets/images/insta/IMG_3.jpg" class="c-pointer w-100">
 						</div>
 						<div class="col-6 col-md-4 text-center">
-							<img src="./assets/images/dharma_300px.png" class="c-pointer w-100">
+							<img src="./assets/images/insta/IMG_4.jpg" class="c-pointer w-100">
 						</div>
 						<div class="col-6 col-md-4 text-center">
-							<img src="./assets/images/dharma_300px.png" class="c-pointer w-100">
+							<img src="./assets/images/insta/IMG_5.jpg" class="c-pointer w-100">
 						</div>
 						<div class="col-6 col-md-4 text-center">
-							<img src="./assets/images/dharma_300px.png" class="c-pointer w-100">
+							<img src="./assets/images/insta/IMG_6.jpg" class="c-pointer w-100">
 						</div>
 					</div>
 				</div>
