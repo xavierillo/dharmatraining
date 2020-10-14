@@ -87,22 +87,22 @@
 							  <div class="px-3 py-2">
 								<ul class="menu_font_built_bold letter-spacing-2 text-left">	
 									<li class="nav-item w-100">
-										<a class="nav-link c-pointer" @click="change_page(1)">Inicio</a>
+										<a class="nav-link c-pointer" v-b-toggle.sidebar-backdrop @click="change_page(1)">Inicio</a>
 									</li>
 									<li class="nav-item w-100">
 										<b-nav-item-dropdown text="Programa" right>
-											<b-dropdown-item @click="change_page(2)">Crossfit</b-dropdown-item>
-											<b-dropdown-item @click="change_page(3)">Open box</b-dropdown-item>
+											<b-dropdown-item v-b-toggle.sidebar-backdrop @click="change_page(2)">Crossfit</b-dropdown-item>
+											<b-dropdown-item v-b-toggle.sidebar-backdrop @click="change_page(3)">Open box</b-dropdown-item>
 										</b-nav-item-dropdown>
 									</li>
 									<li class="nav-item w-100">
-									  <a class="nav-link c-pointer" @click="change_page(4)">Horarios</a>
+									  <a class="nav-link c-pointer" v-b-toggle.sidebar-backdrop @click="change_page(4)">Horarios</a>
 									</li>
 									<li class="nav-item w-100">
-									  <a class="nav-link c-pointer" @click="change_page(5)">Clases de prueba</a>
+									  <a class="nav-link c-pointer" v-b-toggle.sidebar-backdrop @click="change_page(5)">Clases de prueba</a>
 									</li>
 									<li class="nav-item w-100">
-									  <a class="nav-link c-pointer" @click="change_page(6)">Contacto y como llegar</a>
+									  <a class="nav-link c-pointer" v-b-toggle.sidebar-backdrop @click="change_page(6)">Contacto y como llegar</a>
 									</li>
 								</ul>
 							  </div>
@@ -226,16 +226,16 @@
 			</div>
 			<div v-if="page == 6" class="c-app flex-row align-items-center"> 
 				<div class="container">
-					<div class="row">
+					<div class="row m-0">
 						<div class="col-12 col-sm-12 col-md-4">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.2481028783677!2d-71.26749438488795!3d-29.914758781929695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691ca14917ac111%3A0xcddb2e709cf963ed!2sLos%20N%C3%ADsperos%2043%2C%20La%20Serena%2C%20Coquimbo!5e0!3m2!1ses!2scl!4v1602095631555!5m2!1ses!2scl" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-						</div>					
+						</div>
 						<div class="col-12 col-sm-12 col-md-8">
 							<div class="row align-items-center h-100">
 							<div class="col-12 text-uppercase">
-								<h2 class="font-weight-bold text-white pb-4 text-break"><span class="text-pink mr-4">Correo</span> {{ data.email }}</h2>
-								<h2 class="font-weight-bold text-white pb-4 text-break"><span class="text-pink mr-4">Numero</span> {{ data.phone }}</h2>
-								<h2 class="font-weight-bold text-white pb-4 text-break"><span class="text-pink mr-4">Ubicación</span>{{ data.direction }}</h2>
+								<h2 class="font-weight-bold text-white pb-4 text-break"><span class="text-pink mr-4">Correo</span><br>{{ data.email }}</h2>
+								<h2 class="font-weight-bold text-white pb-4 text-break"><span class="text-pink mr-4">Numero</span><br>{{ data.phone }}</h2>
+								<h2 class="font-weight-bold text-white pb-4 text-break"><span class="text-pink mr-4">Ubicación</span><br>{{ data.direction }}</h2>
 							</div>
 							</div>
 						</div>
@@ -254,8 +254,8 @@
 					<img height="250px" src="./assets/images/camila_foto_perfil.png" style="cursor: pointer;">
 				</div>
 				<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-					<div class="h2 text-body letter-spacing-0 text-uppercase"><strong>Camila Contreras, entrenadora:</strong></div>
-					<h3>"Creo en la importancia de desarrollar una sociedad que valore el bienestar, la vida plena y la felicidad como pilares fundamentales para un bien común”.</h3>
+					<div class="h2 text-body letter-spacing-0 text-uppercase"><strong>Camila Contreras, entrenadora</strong></div>
+					<h3 class="text-justify">"Creo en la importancia de desarrollar una sociedad que valore el bienestar, la vida plena y la felicidad como pilares fundamentales para un bien común”.</h3>
 				</div>
 			</div>
 			<div class="row m-0 p-4">
@@ -263,8 +263,8 @@
 					<img height="250px" src="./assets/images/javier_foto_perfil.png" style="cursor: pointer;">
 				</div>
 				<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pt-3">
-					<div class="h2 text-body letter-spacing-0 text-uppercase"><strong>Javier Miranda, entrenador:</strong></div>
-					<h3>"Mi mayor motivación es ser testigo de los resultados de las personas con quienes trabajo; acompañarlos en su proceso de desarrollo tanto físico como mental y espiritual".</h3>
+					<div class="h2 text-body letter-spacing-0 text-uppercase"><strong>Javier Miranda, entrenador</strong></div>
+					<h3 class="text-justify">"Mi mayor motivación es ser testigo de los resultados de las personas con quienes trabajo; acompañarlos en su proceso de desarrollo tanto físico como mental y espiritual".</h3>
 				</div>
 			</div>
 		</div>
@@ -411,11 +411,29 @@
 				},
 				slide: 0,
         		sliding: null,
-				page: 5
+				page: 0,
+				hide:false,
 			}
 		},
 
 		methods: {
+			onOpen(id_popover) {
+                console.log()
+                this.$root.$emit('bv::hide::popover')
+                this.$root.$emit('bv::show::popover',id_popover);
+            },
+            onClose(id_popover) {
+                this.$root.$emit('bv::hide::popover', id_popover)
+            },
+
+            hide_modal(id) {
+                this.$bvModal.hide(id);
+            },
+
+            show_modal(id) {
+                this.$bvModal.show(id);
+            },
+
 			onSlideStart(slide) {
         		this.sliding = true
 		    },
@@ -423,7 +441,15 @@
 	        	this.sliding = false
 	      	},
 			change_page(number) {
+				//this.v-b-toggle="['my-collapse1', 'my-collapse2']"
+				
+				this.hide = false;
 				this.page = number;
+
+				if (this.page == 1) {
+					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_2.png')})`;
+				}
+
 				if (this.page == 2) {
 					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_3.png')})`;
 				}
