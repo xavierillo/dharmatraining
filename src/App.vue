@@ -114,14 +114,26 @@
 			<!-- inicio 1 -->
 			<div v-if="page == 1" class="c-app flex-row align-items-center"> 
 				<div class="container">
-					<div class="row m-0">
-						<div class="col"></div>
-						<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 text-white text-center pl-4 pr-4">			
-							<div class="menu_font_built_bold h3 text-white letter-spacing-0">
-							{{ data.text_inicio }}</div>
-						</div>
-						<div class="col"></div>
-						<div class="col-12 text-center pt-4">
+					<div class="row m-0 text-white">
+						<div class="col-12 col-sm-6 col-md-6 pb-4">
+ 							<h4  class="menu_font_built_bold h3 text-white letter-spacing-0"><i class="fas fa-users"></i> UNA DISCIPLINA PARA TODOS</h4>
+ 							<h6 class="text-justify">¡No importan tu tamaño o tus medidas! Entendemos el CrossFit como una experiencia inclusiva que puede ayudar a cualquiera que desee mejorar su vida.</h6>
+ 						</div>
+ 						<div class="col-12 col-sm-6 col-md-6 pb-4">
+ 							<h4  class="menu_font_built_bold h3 text-white letter-spacing-0"><i class="fas fa-balance-scale"></i> DEPORTE INTEGRAL</h4>
+ 							<h6 class="text-justify">Promovemos tanto la salud física como la mental y espiritual a través del acondicionamiento físico (CrossFit).</h6>
+ 						</div>
+ 						<div class="col-12 col-sm-6 col-md-6 pb-4">
+ 							<h4  class="menu_font_built_bold h3 text-white letter-spacing-0"><i class="fas fa-heart"></i> SÉ PARTE DE UNA COMUNIDAD</h4>
+ 							<h6 class="text-justify">Creemos en la importancia de los vínculos entre las personas y por eso fomentamos un ambiente de confianza y apoyo mutuo. ¡Los logros de uno son los logros de todos!</h6>
+ 						</div>
+ 						<div class="col-12 col-sm-6 col-md-6 pb-4">
+ 							<h4  class="menu_font_built_bold h3 text-white letter-spacing-0"><i class="fas fa-walking"></i> ENTRENAMIENTO PERSONALIZADO</h4>
+ 							<h6 class="text-justify">Nuestras clases de CrossFit están ideadas para ti considerando tus fortalezas y debilidades. Te ayudaremos a alcanzar tu propia meta.</h6>
+ 						</div>
+					</div>
+					<div class="row m-0 text-white  pt-4">
+						<div class="col-12 text-center">
 							<a target="_black" class="btn btn-lg btn-pink m-2" :href="data.contact_me"><strong class="text-uppercase">Clase de prueba</strong></a>
 							<a target="_black" class="btn-lg btn btn-pink m-2" :href="data.proof_class"><strong class="text-uppercase">Te contactamos</strong></a>
 						</div>
@@ -136,7 +148,7 @@
 							<div class="h5 text-white letter-spacing-0 font-weight-bold">{{ data.text_crossfit }}</div>
 						</div>
 						<div class="col-12 text-white text-center pt-4 pb-4 d-sm-none">
-							<small class="h5"> sal de la rutina a través de movimientos constantemente variados y a eso súmale una ejecución a alta intensidad ¿que optienes? resultados</small>
+							<small class="h5"> sal de la rutina a través de movimientos constantemente variados y a eso súmale una ejecución a alta intensidad ¿que obtienes? resultados</small>
 						</div>
 						<div class="col-12 text-white text-center pl-4 pr-4 d-none d-sm-block">
 							<strong class="display-1 font_third_rail text-pink letter-spacing-1">Crossfit</strong>
@@ -250,22 +262,30 @@
 		<!-- coach -->
 		<div v-if="page == 1" class="container-full" style="background-color: #e6ebf0">
 			<div class="row m-0 p-4">
-				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
-					<img height="250px" src="./assets/images/camila_foto_perfil.png" style="cursor: pointer;">
+				
+				<div class="col-12 text-center pt-2 pb-4">
+					<div class="h3 text-body letter-spacing-0 bold text-uppercase"><strong>Conoce a nuestros entrenadores</strong></div>
 				</div>
-				<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-					<div class="h2 text-body letter-spacing-0 text-uppercase"><strong>Camila Contreras, entrenadora</strong></div>
-					<h3 class="text-justify">"Creo en la importancia de desarrollar una sociedad que valore el bienestar, la vida plena y la felicidad como pilares fundamentales para un bien común”.</h3>
+				<div class="col-6">
+					<div class="col-12 text-center">
+						<img height="250px" src="./assets/images/camila_foto_perfil.png" style="cursor: pointer;">
+					</div>
+					<div class="col-12  pt-3">
+						<div class="h2 text-body letter-spacing-0 text-uppercase text-center"><strong>Camila Contreras</strong></div>
+						<h3 class="text-justify"><strong>"</strong>Creo en la importancia de desarrollar una sociedad que valore el bienestar, la vida plena y la felicidad como pilares fundamentales para un bien común<strong>"</strong>.</h3>
+					</div>
 				</div>
-			</div>
-			<div class="row m-0 p-4">
-				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+				<div class="col-6">
+				
+				<div class="col-12 text-center">
 					<img height="250px" src="./assets/images/javier_foto_perfil.png" style="cursor: pointer;">
 				</div>
-				<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 pt-3">
-					<div class="h2 text-body letter-spacing-0 text-uppercase"><strong>Javier Miranda, entrenador</strong></div>
-					<h3 class="text-justify">"Mi mayor motivación es ser testigo de los resultados de las personas con quienes trabajo; acompañarlos en su proceso de desarrollo tanto físico como mental y espiritual".</h3>
+				<div class="col-12 pt-3">
+					<div class="h2 text-body letter-spacing-0 text-uppercase text-center"><strong>Javier Miranda</strong></div>
+					<h3 class="text-justify"><strong>"</strong>Mi mayor motivación es ser testigo de los resultados de las personas con quienes trabajo; acompañarlos en su proceso de desarrollo tanto físico como mental y espiritual<strong>"</strong>.</h3>
 				</div>
+			</div>
+
 			</div>
 		</div>
 		<!--crossfit -->
@@ -376,7 +396,7 @@
 					contact_me: 'https://docs.google.com/forms/d/e/1FAIpQLSfetT2fpC36yNuKZtVmeBbGb6OxTG_r1Hs3NZ2K5O3OfFv0sA/viewform',
 					proof_class: 'https://docs.google.com/forms/d/1X6rsj_TXxmsiK8QDu9Acr9mW4VAp-ILdAmbS6BPb9Hg/viewform?edit_requested=true',
 					text_inicio: 'Texto 1: vision. breve descripcón del servicio haiendo hincapie en idea de desciplina inegral, quizás desmitificar idea de crossfit como "deporte rudo-militar"',
-					text_crossfit: 'El crossfit es una actividad física de alto rendimiento que tiene como objetico desarrollar diversas capacidades corporales.',
+					text_crossfit: 'El crossfit es una actividad física de alto rendimiento que tiene como objetivo desarrollar diversas capacidades corporales.',
 					text_open_box: 'Horas en las que el box estará abierto a los crossfiters. Estas horas irán dedicadas para practicar movimientos o mejorar técnicas.',
 				},
 				title_page: 'Dharma training',
@@ -447,7 +467,7 @@
 				this.page = number;
 
 				if (this.page == 1) {
-					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_2.png')})`;
+					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_10.png')})`;
 				}
 
 				if (this.page == 2) {
@@ -463,7 +483,7 @@
 				}
 
 				if (this.page == 5) {
-					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_10.png')})`;
+					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_2.png')})`;
 				}
 
 				if (this.page == 6) {
