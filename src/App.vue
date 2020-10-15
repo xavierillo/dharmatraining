@@ -30,7 +30,7 @@
 	</div>
 	<div v-if="page >= 1"> 
 		<!-- centana principal con fondo  -->
-		<div v-bind:style="style_object_2">
+		<div :class="style_object_2">  <!--  v-bind:style="style_object_2"> -->
 			<div class="container-fluid navbar navbar-dark navbar-expand-md">
 				<div class="row m-0">
 					<div class="col-12 d-md-none d-sm-block text-white menu_font_built_bold text-center" style="font-size: 12px;">
@@ -290,7 +290,7 @@
 		</div>
 		<!--crossfit -->
 		<div v-if="page == 2" class="container-full">
-			<div class="row ml-0 align-items-center" v-bind:style="style_crossfit_1">
+			<div class="row ml-0 align-items-center style_crossfit_1">
 				<div class="col-12 pt-4 text-white text-center d-sm-none">
 					<div class="font_third_rail display-4 text-white pt-4 mt-4 letter-spacing-0">para <span class="text-dark">cualquier</span> persona</div>
 				</div>
@@ -301,7 +301,7 @@
 					<div class="h5 text-white text-uppercase">puede practicarlo cualquier persona esté o no en forma física. De echo, el éxito del crossfit reside en su facilidad para adaptarse a cualquier condición.</div>
 				</div>
 			</div>
-			<div class="row ml-0 align-items-center" v-bind:style="style_crossfit_2">
+			<div class="row ml-0 align-items-center style_crossfit_2">
 				<div class="col-12 pt-4 text-white text-center d-sm-none">
 					<div class="font_third_rail display-4 text-white pt-4 mt-4 letter-spacing-0">Nivel mas <span class="text-pink">Alta</span></div>
 					<div class="h5 text-white text-uppercase">En su nivel más alto de competición encontramos gente exigente que quiere esforzarse al máximo.</div>
@@ -311,7 +311,7 @@
 					<div class="h5 text-white text-uppercase">En su nivel más alto de competición encontramos gente exigente que quiere esforzarse al máximo.</div>
 				</div>
 			</div>
-			<div class="row ml-0 align-items-center" v-bind:style="style_crossfit_3">
+			<div class="row ml-0 align-items-center style_crossfit_3">
 				<div class="col-12 pt-4 text-white text-center d-sm-none">
 					<div class="font_third_rail display-4 text-white pt-4 mt-4 letter-spacing-0">Nivel mas <span class="text-dark">Ligero</span></div>
 					<div class="h5 text-white text-uppercase">En un nivel más ligero se encuentra la mayoría de crossfiters en el mundo. <p>Hombres y mujeres de todas las edades que buscan ponerse en forma, estar más ágiles, saludables y conseguir grandes resultados con su cuerpo que se notan enseguida a la visa y en su acticadad diaria.</p></div>
@@ -323,7 +323,7 @@
 			</div>
 		</div>
 		<div v-if="page == 3" class="container-full">
-			<div class="row m-0 align-items-center" v-bind:style="style_open_box_1">
+			<div class="row m-0 align-items-center style_open_box_1">
 				<div class="col-12 pt-4 text-white text-center d-sm-none">
 					<div class="font_third_rail display-4 text-white pt-4 mt-4 letter-spacing-0">LLega a box y ponte a <span class="text-dark">entrenar</span></div>
 					<div class="h5 text-white text-uppercase">El open box solo esta habilitados en las horas indicadas en la pestaña "planes y horarios"</p></div>
@@ -405,30 +405,7 @@
 					'background-size': 'cover',
 					'background-image': `url(${require('./assets/images/enmascarar_grupo_1.png')})`
 				},
-				style_object_2: {
-					'background-size': 'cover',
-					'background-image': `url(${require('./assets/images/enmascarar_grupo_2.png')})`
-				},
-				style_crossfit_1: {
-					'background-size': 'cover',
-					'background-image': `url(${require('./assets/images/enmascarar_grupo_4.png')})`,
-					'min-height': '80vh'
-				},
-				style_crossfit_2: {
-					'background-size': 'cover',
-					'background-image': `url(${require('./assets/images/enmascarar_grupo_5.png')})`,
-					'min-height': '100vh'
-				},
-				style_crossfit_3: {
-					'background-size': 'cover',
-					'background-image': `url(${require('./assets/images/enmascarar_grupo_6.png')})`,
-					'min-height': '100vh'
-				},
-				style_open_box_1: {
-					'background-size': 'cover',
-					'background-image': `url(${require('./assets/images/enmascarar_grupo_8.png')})`,
-					'min-height': '100vh'
-				},
+				style_object_2: 'style_object_0',	
 				slide: 0,
         		sliding: null,
 				page: 0,
@@ -461,37 +438,35 @@
 	        	this.sliding = false
 	      	},
 			change_page(number) {
-				//this.v-b-toggle="['my-collapse1', 'my-collapse2']"
-				
 				this.hide = false;
 				this.page = number;
 
 				if (this.page == 0) {
-					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_1.png')})`;
+					this.style_object_2 = 'style_object_0'
 				}
 
 				if (this.page == 1) {
-					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_10.png')})`;
+					this.style_object_2 = 'style_object_1'
 				}
 
 				if (this.page == 2) {
-					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_3.png')})`;
+					this.style_object_2 = 'style_object_2'
 				}
 
 				if (this.page == 3) {
-					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_7.png')})`;
+					this.style_object_2 = 'style_object_3'
 				}
 
 				if (this.page == 4) {
-					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_9.png')})`;
+					this.style_object_2 = 'style_object_4'
 				}
 
 				if (this.page == 5) {
-					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_2.png')})`;
+					this.style_object_2 = 'style_object_5'
 				}
 
 				if (this.page == 6) {
-					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_11.png')})`;
+					this.style_object_2 = 'style_object_6'
 				}
 			}
 		}

@@ -78,3 +78,62 @@ body {
 .c-pointer {
 	cursor: pointer;
 }
+
+.style_object_0 {
+	background-size: cover;
+	background-image: url('../images/enmascarar_grupo_1.png');
+}
+
+.style_object_1 {
+	background-size: cover;
+	background-image: url("../images/enmascarar_grupo_10.png");
+
+}
+.style_object_2 {
+	background-size: cover;
+	background-image: url("../images/enmascarar_grupo_3.png");
+
+}
+.style_object_3 {
+	background-size: cover;
+	background-image: url("../images/enmascarar_grupo_7.png");
+
+}
+.style_object_4 {
+	background-size: cover;
+	background-image: url("../images/enmascarar_grupo_9.png");
+}
+
+.style_object_5 {
+	background-size: cover;
+	background-image: url("../images/enmascarar_grupo_2.png");
+}
+
+.style_object_6 {
+	background-size: cover;
+	background-image: url("../images/enmascarar_grupo_11.png");
+}
+
+.style_crossfit_1 {
+	background-size: cover;
+	background-image: url("../images/enmascarar_grupo_4.png");
+	min-height: 80vh;
+}
+
+.style_crossfit_2 {
+	background-size: cover;
+	background-image: url("../images/enmascarar_grupo_5.png");
+	min-height: 100vh;
+}
+
+.style_crossfit_3 {
+	background-size: cover;
+	background-image: url("../images/enmascarar_grupo_6.png");
+	min-height: 100vh;
+}
+
+.style_open_box_1 {
+	background-size: cover;
+	background-image: url("../images/enmascarar_grupo_6.png");
+	min-height: 100vh;
+}
