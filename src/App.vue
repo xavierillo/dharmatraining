@@ -466,6 +466,10 @@
 				this.hide = false;
 				this.page = number;
 
+				if (this.page == 0) {
+					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_1.png')})`;
+				}
+
 				if (this.page == 1) {
 					this.style_object_2['background-image'] = `url(${require('./assets/images/enmascarar_grupo_10.png')})`;
 				}
